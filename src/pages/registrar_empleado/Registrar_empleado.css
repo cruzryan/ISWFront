@@ -8,15 +8,24 @@ body {
 .registrarEmpleado {
     width: 70%;
     margin: 0 auto;
-    background-color: rgba(202, 202, 202, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .registrarEmpleado h1 {
     font-size: 24px;
-    color: black;
+    color: rgb(70, 70, 70);
     text-align: center;
+    font-weight: 500;
 }
+
+form{
+    width: 55vw;
+}
+
 label {
     display: block;
     color: black;
@@ -27,15 +36,44 @@ input {
     width: 100%;
     padding: 5px;
     margin: 5px 0;
+    border: none;
+    color: black;
+    background-color: rgb(233, 233, 233);
+    padding: 1em;
+
 }
+
+input:focus {
+    outline: none;
+    background-color: rgb(238, 238, 238);
+}
+
 select {
     width: 100%;
     padding: 5px;
     margin: 5px 0;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    color: black;
+    padding: 1em;
+
 }
 .center {
     text-align: center;
 }
 .submit-button {
     text-align: center;
+}
+
+
+.submit-button button{
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 0.5em 3em;
+    margin: 1em;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
 }
